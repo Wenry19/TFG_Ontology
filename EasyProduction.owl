@@ -1,0 +1,1540 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/anrik/ontologies/2021/5/untitled-ontology-10"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/anrik/ontologies/2021/5/untitled-ontology-10">
+    <Prefix name="" IRI="http://www.semanticweb.org/anrik/ontologies/2021/5/untitled-ontology-10"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#About"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#App"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Base"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bearing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Block"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlockingPopup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallFunc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallPutBase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallPutBearing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallPutProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Command"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CurrentState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefFunc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefPutBase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefPutBearing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefPutProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DespalletizeProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DestackBase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DestackBearing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlowInstruction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GetCAPs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GetReadyToPut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlobalVars"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoToReadyWayPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Guide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InitializeVars"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Joint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Main"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MasterBoard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoBlockingPopup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Notification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperationBlock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pause"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Play"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Polyscope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Popup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionBlock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProgramNode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SendMessage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SetAnalogOutput"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SetDigitalOutput"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sleep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thread"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#View"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Workflow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affectsBase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affectsBearing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affectsCap"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affectsProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appNotifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#blocksExecutionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#callsBaseFunc"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#callsBearingFunc"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#callsProductFunc"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canAddOrDelete"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canExecute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canExecutePolyscope"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canOpen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#executedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#installedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#jointPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#masterBoardPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#needs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#next"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfApp"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pauses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#placesBase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#placesBearing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#placesProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#plays"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#popupNotifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#programmingGUIof"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sendMessageAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#showsInfoAbout"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stops"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#toolPartOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aboutText"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#activateThread"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#allVars"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#anOutput"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bearingAcceleration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bearingVelocity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#blockCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#blockName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#callFuncInfoLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#destackBaseInfoLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#digOutput"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#duration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#flowInstrInfoLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#funcAcceleration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#funcVelocity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#getCapsInfoLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#goReadyAcceleration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#goReadyVelocity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#guideText"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#iniInfoLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#intensity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ipToConnect"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isError"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isFiltering"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isSimulated"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isWarning"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#jointName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#messageText"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#messageToSend"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#operatorName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#outValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#polyscopeVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#productAcceleration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#productVelocity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#robIntensity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#robVoltage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#robotModel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#scale"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tempMBoard"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#temperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#text"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#toolIntensity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#toolMode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#toolModel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#toolTemperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#toolVoltage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#userNameVars"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#voltage"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#About"/>
+        <Class IRI="#View"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Base"/>
+        <Class IRI="#ProductComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bearing"/>
+        <Class IRI="#ProductComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlockingPopup"/>
+        <Class IRI="#Popup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallFunc"/>
+        <Class IRI="#ProductionBlock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallPutBase"/>
+        <Class IRI="#CallFunc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallPutBearing"/>
+        <Class IRI="#CallFunc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallPutProduct"/>
+        <Class IRI="#CallFunc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cap"/>
+        <Class IRI="#ProductComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CurrentState"/>
+        <Class IRI="#View"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefFunc"/>
+        <Class IRI="#ProductionBlock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefPutBase"/>
+        <Class IRI="#DefFunc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefPutBearing"/>
+        <Class IRI="#DefFunc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefPutProduct"/>
+        <Class IRI="#DefFunc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DespalletizeProduct"/>
+        <Class IRI="#GetReadyToPut"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DestackBase"/>
+        <Class IRI="#GetReadyToPut"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DestackBearing"/>
+        <Class IRI="#GetReadyToPut"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlowInstruction"/>
+        <Class IRI="#ProductionBlock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GetCAPs"/>
+        <Class IRI="#ProductionBlock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GetReadyToPut"/>
+        <Class IRI="#ProductionBlock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlobalVars"/>
+        <Class IRI="#View"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoToReadyWayPoint"/>
+        <Class IRI="#GetReadyToPut"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Guide"/>
+        <Class IRI="#View"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InitializeVars"/>
+        <Class IRI="#ProductionBlock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Main"/>
+        <Class IRI="#View"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoBlockingPopup"/>
+        <Class IRI="#Popup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OperationBlock"/>
+        <Class IRI="#Block"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pause"/>
+        <Class IRI="#Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Play"/>
+        <Class IRI="#Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Popup"/>
+        <Class IRI="#OperationBlock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionBlock"/>
+        <Class IRI="#Block"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SendMessage"/>
+        <Class IRI="#View"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SetAnalogOutput"/>
+        <Class IRI="#OperationBlock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SetDigitalOutput"/>
+        <Class IRI="#OperationBlock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sleep"/>
+        <Class IRI="#OperationBlock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stop"/>
+        <Class IRI="#Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thread"/>
+        <Class IRI="#ProductionBlock"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BlockingPopup"/>
+        <Class IRI="#NoBlockingPopup"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#affectsBase"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#affectsBearing"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#affectsCap"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#affectsProduct"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appNotifies"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#callsBaseFunc"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#callsBearingFunc"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#callsProductFunc"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#jointPartOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#masterBoardPartOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#pauses"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#placesBase"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#placesBearing"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#placesProduct"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#plays"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#popupNotifies"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#stops"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#toolPartOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affectsBase"/>
+        <Class IRI="#DestackBase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affectsBearing"/>
+        <Class IRI="#DestackBearing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affectsCap"/>
+        <Class IRI="#GetCAPs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affectsProduct"/>
+        <Class IRI="#DespalletizeProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appNotifies"/>
+        <Class IRI="#Notification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#blocksExecutionOf"/>
+        <Class IRI="#BlockingPopup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#callsBaseFunc"/>
+        <Class IRI="#CallPutBase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#callsBearingFunc"/>
+        <Class IRI="#CallPutBearing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#callsProductFunc"/>
+        <Class IRI="#CallPutProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canAddOrDelete"/>
+        <Class IRI="#Operator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canExecute"/>
+        <Class IRI="#CurrentState"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canExecutePolyscope"/>
+        <Class IRI="#Polyscope"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canOpen"/>
+        <Class IRI="#View"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectsTo"/>
+        <Class IRI="#App"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#executedBy"/>
+        <Class IRI="#Workflow"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fires"/>
+        <Class IRI="#App"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#installedOn"/>
+        <Class IRI="#ProgramNode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#jointPartOf"/>
+        <Class IRI="#Joint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#manages"/>
+        <Class IRI="#ProgramNode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#masterBoardPartOf"/>
+        <Class IRI="#MasterBoard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#needs"/>
+        <Class IRI="#GetCAPs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#next"/>
+        <Class IRI="#Block"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOf"/>
+        <Class IRI="#Block"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfApp"/>
+        <Class IRI="#View"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfProduct"/>
+        <Class IRI="#ProductComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pauses"/>
+        <Class IRI="#Pause"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#placesBase"/>
+        <Class IRI="#CallPutBase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#placesBearing"/>
+        <Class IRI="#CallPutBearing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#placesProduct"/>
+        <Class IRI="#CallPutProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#plays"/>
+        <Class IRI="#Play"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#popupNotifies"/>
+        <Class IRI="#Popup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#programmingGUIof"/>
+        <Class IRI="#Polyscope"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#Block"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sendMessageAs"/>
+        <Class IRI="#SendMessage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#showsInfoAbout"/>
+        <Class IRI="#CurrentState"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stops"/>
+        <Class IRI="#Stop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#toolPartOf"/>
+        <Class IRI="#Tool"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affectsBase"/>
+        <Class IRI="#Base"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affectsBearing"/>
+        <Class IRI="#Bearing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affectsCap"/>
+        <Class IRI="#Cap"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affectsProduct"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appNotifies"/>
+        <Class IRI="#Operator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#blocksExecutionOf"/>
+        <Class IRI="#Workflow"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#callsBaseFunc"/>
+        <Class IRI="#DefPutBase"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#callsBearingFunc"/>
+        <Class IRI="#DefPutBearing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#callsProductFunc"/>
+        <Class IRI="#DefPutProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canAddOrDelete"/>
+        <Class IRI="#OperationBlock"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canExecute"/>
+        <Class IRI="#Command"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canExecutePolyscope"/>
+        <Class IRI="#Command"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canOpen"/>
+        <Class IRI="#View"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#connectsTo"/>
+        <Class IRI="#Robot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#executedBy"/>
+        <Class IRI="#Robot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fires"/>
+        <Class IRI="#Notification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#installedOn"/>
+        <Class IRI="#Polyscope"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#jointPartOf"/>
+        <Class IRI="#Robot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manages"/>
+        <Class IRI="#Workflow"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#masterBoardPartOf"/>
+        <Class IRI="#Robot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#needs"/>
+        <Class IRI="#Operator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#next"/>
+        <Class IRI="#Block"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOf"/>
+        <Class IRI="#Workflow"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfApp"/>
+        <Class IRI="#App"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfProduct"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pauses"/>
+        <Class IRI="#Workflow"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#placesBase"/>
+        <Class IRI="#Base"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#placesBearing"/>
+        <Class IRI="#Bearing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#placesProduct"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#plays"/>
+        <Class IRI="#Workflow"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#popupNotifies"/>
+        <Class IRI="#Operator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#programmingGUIof"/>
+        <Class IRI="#Robot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#Block"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sendMessageAs"/>
+        <Class IRI="#Popup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#showsInfoAbout"/>
+        <Class IRI="#Robot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stops"/>
+        <Class IRI="#Workflow"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#toolPartOf"/>
+        <Class IRI="#Robot"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#allVars"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#anOutput"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#bearingAcceleration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#bearingVelocity"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#callFuncInfoLabel"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#destackBaseInfoLabel"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#digOutput"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#duration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#flowInstrInfoLabel"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#funcAcceleration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#funcVelocity"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#getCapsInfoLabel"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#goReadyAcceleration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#goReadyVelocity"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#iniInfoLabel"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#intensity"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isError"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isFiltering"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isWarning"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#jointName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#messageText"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mode"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#outValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pos"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#productAcceleration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#productVelocity"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#robIntensity"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#robVoltage"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#scale"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tempMBoard"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#temperature"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#text"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#title"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#userNameVars"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#voltage"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aboutText"/>
+        <Class IRI="#About"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#activateThread"/>
+        <Class IRI="#Thread"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#allVars"/>
+        <Class IRI="#GlobalVars"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#anOutput"/>
+        <Class IRI="#SetAnalogOutput"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#bearingAcceleration"/>
+        <Class IRI="#DestackBearing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#bearingVelocity"/>
+        <Class IRI="#DestackBearing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#blockCode"/>
+        <Class IRI="#Block"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#blockName"/>
+        <Class IRI="#Block"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#callFuncInfoLabel"/>
+        <Class IRI="#CallFunc"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#destackBaseInfoLabel"/>
+        <Class IRI="#DestackBase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#digOutput"/>
+        <Class IRI="#SetDigitalOutput"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#duration"/>
+        <Class IRI="#Sleep"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#flowInstrInfoLabel"/>
+        <Class IRI="#FlowInstruction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#funcAcceleration"/>
+        <Class IRI="#DefFunc"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#funcVelocity"/>
+        <Class IRI="#DefFunc"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#getCapsInfoLabel"/>
+        <Class IRI="#GetCAPs"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#goReadyAcceleration"/>
+        <Class IRI="#GoToReadyWayPoint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#goReadyVelocity"/>
+        <Class IRI="#GoToReadyWayPoint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#guideText"/>
+        <Class IRI="#Guide"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#iniInfoLabel"/>
+        <Class IRI="#InitializeVars"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#intensity"/>
+        <Class IRI="#Joint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ipToConnect"/>
+        <Class IRI="#Main"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isError"/>
+        <Class IRI="#Popup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isFiltering"/>
+        <Class IRI="#GlobalVars"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isSimulated"/>
+        <Class IRI="#Workflow"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isWarning"/>
+        <Class IRI="#Popup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#jointName"/>
+        <Class IRI="#Joint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#messageText"/>
+        <Class IRI="#Popup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#messageToSend"/>
+        <Class IRI="#SendMessage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mode"/>
+        <Class IRI="#Joint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#operatorName"/>
+        <Class IRI="#Operator"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#outValue"/>
+        <Class IRI="#SetDigitalOutput"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#polyscopeVersion"/>
+        <Class IRI="#Polyscope"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pos"/>
+        <Class IRI="#Joint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#productAcceleration"/>
+        <Class IRI="#DespalletizeProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#productVelocity"/>
+        <Class IRI="#DespalletizeProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#robIntensity"/>
+        <Class IRI="#MasterBoard"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#robVoltage"/>
+        <Class IRI="#MasterBoard"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#robotModel"/>
+        <Class IRI="#Robot"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#scale"/>
+        <Class IRI="#SetAnalogOutput"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tempMBoard"/>
+        <Class IRI="#MasterBoard"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#temperature"/>
+        <Class IRI="#Joint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#text"/>
+        <Class IRI="#Notification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#title"/>
+        <Class IRI="#Notification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#toolIntensity"/>
+        <Class IRI="#Tool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#toolMode"/>
+        <Class IRI="#Tool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#toolModel"/>
+        <Class IRI="#Tool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#toolTemperature"/>
+        <Class IRI="#Tool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#toolVoltage"/>
+        <Class IRI="#Tool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#userNameVars"/>
+        <Class IRI="#GlobalVars"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#voltage"/>
+        <Class IRI="#Joint"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#aboutText"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#activateThread"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#allVars"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#anOutput"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#bearingAcceleration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#bearingVelocity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#blockCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#blockName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#callFuncInfoLabel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#destackBaseInfoLabel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#digOutput"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">7</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#duration"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">30</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#flowInstrInfoLabel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#funcAcceleration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#funcVelocity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#getCapsInfoLabel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#goReadyAcceleration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#goReadyVelocity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#guideText"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#iniInfoLabel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#intensity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ipToConnect"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isError"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isFiltering"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isSimulated"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isWarning"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#jointName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#messageText"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#messageToSend"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mode"/>
+        <Datatype abbreviatedIRI="xsd:unsignedByte"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#operatorName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#outValue"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#polyscopeVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pos"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#productAcceleration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#productVelocity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#robIntensity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#robVoltage"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#robotModel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#scale"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:float"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tempMBoard"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#temperature"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#text"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#toolIntensity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#toolMode"/>
+        <Datatype abbreviatedIRI="xsd:unsignedByte"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#toolModel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#toolTemperature"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#toolVoltage"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#userNameVars"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#voltage"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
